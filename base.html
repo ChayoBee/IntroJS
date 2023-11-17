@@ -24,14 +24,16 @@
                 Cantidad:
                 <span class="cantidad"></span>
                 <button onclick="
-                cantidad = cantidad + 1;
+                cantidad++;
                 cantidadSpan.innerHTML = cantidad;
                 totalSpan.innerHTML = cantidad * precio;
                 ">+</button>
                 <button onclick="
-                cantidad = cantidad - 1;
+                if (cantidad > 0){
+                cantidad--;
                 cantidadSpan.innerHTML = cantidad;
                 totalSpan.innerHTML = cantidad * precio;
+                }
                 ">-</button>
               </p>
         </div>
